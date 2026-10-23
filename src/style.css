@@ -1,0 +1,20 @@
+/* dev/creator=tubakhxn */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#cfcbf0}
+body{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+#app{position:relative;height:100vh;aspect-ratio:9/16;max-width:100vw;margin:0 auto;background:#ddd9fb;overflow:hidden;container-type:size}
+#cam{position:absolute;left:19%;top:4%;width:62%;aspect-ratio:4/3;background:#222;z-index:3}
+#cam .bar{position:absolute;left:0;right:0;top:0;height:6.5%;background:#0a14a8;z-index:2;display:flex;justify-content:flex-end;align-items:center;gap:1.2cqw;padding-right:1cqw}
+#cam .bar i{width:2.6cqw;height:2.6cqw;border:.4cqw solid #fff;display:block}#cam .bar i.x{background:linear-gradient(45deg,transparent 45%,#fff 45% 55%,transparent 55%),linear-gradient(-45deg,transparent 45%,#fff 45% 55%,transparent 55%)}
+#video{position:absolute;inset:6.5% 0 0;width:100%;height:93.5%;object-fit:cover;transform:scaleX(-1);filter:grayscale(.35) contrast(.95)}
+#tip{position:absolute;left:0;top:0;opacity:0;transition:opacity .25s;pointer-events:none;z-index:3;color:#fff;font-size:2.2cqw;white-space:nowrap}
+#tip b{position:absolute;left:-.8cqw;top:-.8cqw;width:1.6cqw;height:1.6cqw;border-radius:50%;background:#fff;box-shadow:0 0 0 .3cqw rgba(255,255,255,.3)}#tip span{position:absolute;left:1.4cqw;top:1.6cqw;text-shadow:0 0 .6cqw #000}
+#status{position:absolute;left:2cqw;bottom:1.5cqw;color:#fff;font-size:1.7cqw;z-index:3;text-shadow:0 0 .6cqw #000}
+#stage{position:absolute;left:0;right:0;top:25%;bottom:20%}#stage canvas{width:100%;height:100%;display:block}
+#index{position:absolute;left:0;right:0;bottom:0;height:20%;background:#0a14a8;padding:3.4cqw 2.6cqw;color:#fff;z-index:3;display:flex;align-items:flex-start}
+#list{list-style:none;width:100%;display:grid;grid-template-columns:19fr 23fr 19fr;grid-auto-flow:row;gap:4cqw 1cqw;font-size:2.3cqw;line-height:1.3;letter-spacing:-.04em;white-space:nowrap}
+#list li{position:relative;padding-left:2.7cqw;opacity:.78;transition:opacity .4s,color .4s}#list li::before{content:"";position:absolute;left:0;top:.9cqw;width:1.3cqw;height:1.3cqw;background:#ff7a1a;transition:transform .4s,background .4s}
+#list li.on{opacity:1;color:#ffd23f}#list li.on::before{background:#ffd23f;transform:scale(2)}
+
+#intro{position:absolute;inset:0;background:#000;z-index:20;touch-action:manipulation;cursor:pointer}#intro canvas{width:100%;height:100%;display:block}
+#replay{position:absolute;left:2cqw;top:1.4cqw;z-index:5;font:inherit;font-size:1.8cqw;padding:.7cqw 1.4cqw;border:.25cqw solid #0a14a8;background:rgba(255,255,255,.55);color:#0a14a8;cursor:pointer}#replay:hover{background:#fff}
